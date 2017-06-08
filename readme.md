@@ -3,9 +3,9 @@ A simple register and login application. Made using PHP MVC Framework - <a href=
 ## Screenshots
 
 - LOGIN AREA
-<img src="http://imgur.com/a/m9Iej">
+<img src="http://i.imgur.com/FSEaPeU.png">
 
 - REGISTER AREA
-<img src="http://imgur.com/a/uortJ">
+<img src="http://i.imgur.com/f5uGBho.png">
 
 Feel free to contribute. Thank you. :)
