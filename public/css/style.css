@@ -1,0 +1,55 @@
+.btn-home {
+    height: 60px;
+    width: 150px;
+    background: #2a88bd;
+    text-align: center;
+    color: #fff;
+    font-family: 'Lato',sans-serif;
+    border: none;
+    font-size: 20px;
+    margin-top: 5%;
+}
+
+.main-heading {
+    text-align: center;
+    color: #000000;
+    font-weight: 200;
+    font-family: 'Raleway',sans-serif;
+    margin-top: 5%;
+}
+
+.big-circle {
+    border: 2px solid #000;
+    height: 350px;
+    width: 350px;
+    border-radius: 175px;
+    margin-top: 5%;
+    text-align: center;
+    position: relative;
+    display: table;
+}
+
+.big-circle form {
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'Raleway',sans-serif;
+    font-size: 27px;
+}
+
+.register form {
+    font-family: 'Questrial',sans-serif;
+    text-align: center;
+    font-size: 27px;
+    margin-top: 3%;
+}
+
+.input-login {
+    width: 70%;
+    border: 2px solid #2a88bd;
+}
+.input-register {
+    text-align: center;
+    width: 35%;
+    border: 2px solid #2a88bd;
+    margin-bottom: 2%;
+}
