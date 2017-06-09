@@ -17,6 +17,7 @@ class user_controller extends Controller
     }
     public function users()
     {
+        $this->validate(request(), ['username' => 'required|unique:user_info,username|max:20',          'email' => 'required|unique:user_info,email', 'password' => 'required']);
         $user = new user_model;
         $user->username = request('username');
         $user->email = request('email');
@@ -25,5 +26,17 @@ class user_controller extends Controller
         $user->confpass = $password;
         $user->save();
         return view('success');
+    }
+
+    public function messages()
+    {
+        return [
+            'username.required' => 'A username is required.',
+            'username.unique' => 'Username already exists.',
+            'username.max' => 'Username must be atmost 20 characters.',
+            'email.required' => 'An E-Mail is required.',
+            'email.unique' => 'E-Mail already exists.',
+            'password.required' => 'Password is required'
+        ];
     }
 }

@@ -53,3 +53,14 @@
     border: 2px solid #2a88bd;
     margin-bottom: 2%;
 }
+
+.list-alert {
+    font-family: 'Lato',sans-serif;
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: -3%;
+}
+
+.alert-danger {
+    background-color: #d62728 !important;
+}
