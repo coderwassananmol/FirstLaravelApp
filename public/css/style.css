@@ -16,6 +16,7 @@
     font-weight: 200;
     font-family: 'Raleway',sans-serif;
     margin-top: 5%;
+    vertical-align: middle;
 }
 
 .big-circle {
@@ -63,4 +64,34 @@
 
 .alert-danger {
     background-color: #d62728 !important;
+}
+
+.showUserInfo {
+    font-family: 'Raleway', sans-serif;
+    color: #000000;
+    font-size: 22px;
+    display: inline-block;
+    margin-top: 5%;
+}
+
+.showUser {
+    font-family: 'Questrial', sans-serif;
+    color: #000000;
+    font-size: 22px;
+    font-weight: 500;
+    display: inline-block;
+    margin-right: 5em;
+}
+
+.showEmoji {
+    text-align: center;
+}
+
+.showEmoji:after {
+    content: "\1f61e";
+    font-size: 5em;
+}
+
+.middleParent {
+    display: table;
 }

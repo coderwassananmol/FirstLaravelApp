@@ -39,4 +39,17 @@ class user_controller extends Controller
             'password.required' => 'Password is required'
         ];
     }
+
+    public function partuser($username)
+    {
+        $getData = user_model::where('username', $username)->get();
+        if(isset($getData[0])) {
+            $getUserID = $getData[0]->email;
+            $getUserName = $getData[0]->username;
+            $getUserCreated = $getData[0]->created_at;
+            return view('users.showuser', compact('getUserID', 'getUserName', 'getUserCreated'));
+        }
+        else
+            return view('users.404');
+    }
 }

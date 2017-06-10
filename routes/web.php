@@ -14,3 +14,4 @@
 Route::get('/login', 'user_controller@login');
 Route::get('/register','user_controller@register');
 Route::post('/users','user_controller@users');
+Route::get('/{username}','user_controller@partuser');
