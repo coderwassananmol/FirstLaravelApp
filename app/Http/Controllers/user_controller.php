@@ -28,6 +28,20 @@ class user_controller extends Controller
         return view('success');
     }
 
+    public function getUser()
+    {
+        $username = request('username');
+        $getUser = user_model::where('username',$username)->get();
+        if(!isset($getUser[0])) {
+            $status = false;
+            return view('/login',compact('status'));
+        }
+        else {
+            $status = true;
+            return view('/login',compact('status'));
+        }
+    }
+
     public function messages()
     {
         return [
