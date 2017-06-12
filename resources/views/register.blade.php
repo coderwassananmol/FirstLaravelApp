@@ -2,8 +2,10 @@
 @section('getTitle')
     Welcome user! Please register.
     @endsection
+@section('heading')
+    Hello Human, please register.
+@endsection
 @section('body')
-    <h1 class="main-heading">Hello Human, please register.</h1>
     <div class="errors"></div>
     <div class="container register">
         <form method="POST" action="/users">

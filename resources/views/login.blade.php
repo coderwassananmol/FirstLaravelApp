@@ -2,8 +2,10 @@
 @section('getTitle')
     Welcome User
 @endsection
+@section('heading')
+    Hello Human, please login.
+@endsection
 @section('body')
-    <h1 class="main-heading">Hello Human, please login.</h1>
     <div class="container big-circle">
         <form method="POST" action="/getUser">
             {{csrf_field()}}
@@ -28,6 +30,7 @@
             @endif
             @if($status == true)
                 $('.main-heading').html('Great! You just need to enter your <strong>password</strong> to continue.');
+                $('form').attr('action','/getPass/{{$username}}');
                 $('.username').fadeOut(100);
                 $('.password').fadeIn(700);
             @endif

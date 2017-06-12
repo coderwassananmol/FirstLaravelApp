@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato|Raleway:200|Questrial" rel="stylesheet">
 </head>
 <body>
+<h1 class="main-heading">@yield('heading')</h1>
 @yield('body')
 </body>
 </html>

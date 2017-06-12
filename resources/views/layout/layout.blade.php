@@ -19,17 +19,18 @@
 <div class="container">
     <div class="row">
         <div class="col-md-6 col-md-push-4">
-            <a href="login">
+            <a href="/login">
                 <button type="button" class="btn-primary btn-home">LOGIN</button>
             </a>
         </div>
         <div class="col-md-6 col-md-offset-0">
-            <a href="register">
+            <a href="/register">
                 <button type="button" class="btn-primary btn-home">REGISTER</button>
             </a>
         </div>
     </div>
 </div>
+<h1 class="main-heading">@yield('heading')</h1>
 @yield('body')
 </body>
 </html>

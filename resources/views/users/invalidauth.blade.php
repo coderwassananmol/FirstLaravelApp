@@ -1,9 +1,9 @@
 @extends('layout.layout')
 @section('getTitle')
-    USER NOT FOUND!
+    Sorry, you cannot be logged in!
 @endsection
 @section('heading')
-    SORRY, THE PAGE YOU HAVE BEEN LOOKING FOR DOESN'T EXIST. WE ARE SORRY FOR THE INCONVENIENCE CAUSED.
+    The password was incorrect for the specified username.
 @endsection
 @section('body')
     <h1 class="showEmoji"></h1>

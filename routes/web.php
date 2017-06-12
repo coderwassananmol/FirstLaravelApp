@@ -16,3 +16,5 @@ Route::get('/register','user_controller@register');
 Route::post('/users','user_controller@users');
 Route::post('/getUser','user_controller@getUser');
 Route::get('/{username}','user_controller@partuser');
+Route::post('/getPass/{username}','user_controller@getPass');
+//Route::get('/hello/{username}','user_controller@getPass');

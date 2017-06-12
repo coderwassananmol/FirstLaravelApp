@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\user_model;
+use Request;
+
 
 class user_controller extends Controller
 {
@@ -38,8 +39,19 @@ class user_controller extends Controller
         }
         else {
             $status = true;
-            return view('/login',compact('status'));
+            return view('/login',compact('status','username'));
         }
+    }
+
+    public function getPass($username)
+    {
+        $password = Request::input('password');
+        $getData = user_model::where('username',$username)->get();
+        $getPass = $getData[0]->password;
+        if(password_verify($password,$getPass))
+            return redirect('/'.$getData[0]->username);
+        else
+            return view('users.invalidauth');
     }
 
     public function messages()
